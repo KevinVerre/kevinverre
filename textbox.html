@@ -5,10 +5,18 @@
 	</title>
 </head>
 <body>
-	<textarea style="width:85%; height:50%; " autofocus></textarea>
+	<textarea style="width:85%; height:50%; background-color: inherit; color: inherit" autofocus></textarea>
 	<br/>
 	<div>
 		This text is not saved anywhere.
 	</div>
+	<button id="changeColorBtn" style="background-color: black; color: white;">Dark Mode</button>
+
+	<script>
+        document.getElementById("changeColorBtn").addEventListener("click", function() {
+            document.body.style.backgroundColor = "black";
+			document.body.style.color = "white";
+        });
+    </script>
 </body>
 </html>
