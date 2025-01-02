@@ -4,18 +4,18 @@
 		KevinVerre.com/textbox
 	</title>
 </head>
-<body>
+<body style="background-color: black; color: white;">
 	<textarea style="width:85%; height:50%; background-color: inherit; color: inherit" autofocus></textarea>
 	<br/>
 	<div>
 		This text is not saved anywhere.
 	</div>
-	<button id="changeColorBtn" style="background-color: black; color: white;">Dark Mode</button>
+	<button id="changeColorBtn" style="background-color: black; color: white;">Light Mode</button>
 
 	<script>
         document.getElementById("changeColorBtn").addEventListener("click", function() {
-            document.body.style.backgroundColor = "black";
-			document.body.style.color = "white";
+            document.body.style.backgroundColor = "white";
+			document.body.style.color = "black";
         });
     </script>
 </body>
